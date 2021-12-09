@@ -1,0 +1,41 @@
+### Sanity Check
+GET http://localhost:5000/
+
+### POST User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "first_name": "aser",
+    "last_name": "nabil",
+    "email": "aser@gmail.com",
+    "password": "1234",
+    "access_code": "ABD#@*$&CSVKHVB",
+    "class": "operations",
+    "designation": "janitor"
+}
+
+
+###
+    "first_name": "String",
+    "last_name": "String",
+    "email": "String",
+    "password": "String",
+    "access_code": "String",
+    "class": "String",
+    "designation": "String"
+###
+
+### GET All user
+GET http://localhost:5000/users
+
+### Delete user
+DELETE http://localhost:5000/users/61b2369cc36120bc36e7168e
+
+### Add Entry
+POST http://localhost:5000/entry
+Content-Type: application/json
+
+{
+    "access_code":"ABD#@*$&CSVKHVB"
+}
